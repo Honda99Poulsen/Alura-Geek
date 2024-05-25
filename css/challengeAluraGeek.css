@@ -117,9 +117,14 @@
 
 /* S E C C I O N    P R O D U C T O S */
 
-.Productos, .Agregar{
-    width: 50%;
+.Productos{
+    width: 60%;
     font-family: "IBM Plex Mono";
+}
+
+.Agregar{
+  width: 40%;
+  font-family: "IBM Plex Mono";
 }
 
 .misProductosContainer{
@@ -191,7 +196,7 @@
 /* Seccion Agregar Producto */
 
 .div-agregar-articulo{
-  margin: 150px;
+  margin-top: 150px;
 }
 
 .formulario{
@@ -214,6 +219,12 @@
     font-size: 16px;
     font-family: "IBM Plex Mono";  
     padding: 10px 0 9px 12.54px;
+}
+
+.enviarLimpiar{
+  display: flex; 
+  justify-content: space-between;
+  gap: 13px;
 }
 
 .botones{
@@ -253,4 +264,59 @@
 
 .textoFinal{
   font-weight: lighter;
+}
+
+
+/* D I S E Ñ O   D E   P A G I N A   R E S P O N S I V A */
+@media(max-width: 768px){
+
+  /* Seccion M A I N */
+  .main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Seccion M I S   P R O D U C T O S */
+
+  .Productos{
+    order: 2;
+    width: 100%;
+  }
+
+  .card-container{
+    margin: 0 0 59.06px 0;
+    margin-left: 16px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+    border-left: none;
+  }
+
+  .card{
+    margin: 44px auto;
+  }
+
+  .Agregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-agregar-articulo{
+    margin: 74px 0 98px 0 ;
+  }
+
+  .misProductosContainer{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .piePagina{
+    padding: 32px;
+  }
+
 }
