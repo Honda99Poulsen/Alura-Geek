@@ -26,7 +26,7 @@ try {
 }
 
 
-async function crearArticuloProducto(){
+async function crearArticuloProducto(nombre, precio, urlImagen ){
 
     try {
         
@@ -40,8 +40,7 @@ async function crearArticuloProducto(){
             body:JSON.stringify({
                 nombre:nombre,
                 precio:precio,
-                imagen:imagen,
-                id:id
+                urlImagen:urlImagen
         })
         });
 

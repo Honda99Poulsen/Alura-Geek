@@ -52,16 +52,16 @@
                 <h2 class="titulo-main">AGREGAR <br>PRODUCTO:</h2>
 
                 <!-- Formulario -->
-                <form action="" class="formulario">
+                <form action="" class="formulario" data-form>
 
                     <!-- input Nombre -->
-                    <input class="campos" type="text" placeholder="nombre...">
+                    <input name="nombre" class="campos" type="text" placeholder="nombre..." data-nombre>
 
                     <!-- input Precio -->
-                    <input class="campos" type="text" placeholder="precio...">
+                    <input name="precio" class="campos" type="text" placeholder="precio..." data-precio>
 
                     <!-- input Imagen -->
-                    <input class="campos" type="text" placeholder="imagen...">
+                    <input name="imagen" class="campos" type="text" placeholder="imagen..." data-imagen>
 
                     <div class="enviarLimpiar">
                         <button class="botones boton-azul">Enviar</button>
@@ -82,5 +82,6 @@
     </footer>
 
     <script src="js/listarProductos.js" type="module"></script>
+    <script src="js/nuevoProducto.js" type="module"></script>
 </body>
 </html>
