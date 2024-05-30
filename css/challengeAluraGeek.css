@@ -244,11 +244,39 @@
 .boton-azul{
     color: #fff;
     background-color: #03318C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-azul:hover{
+  color: #03318C;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-azul:active{
+  background-color: #FF0000;
+  color: #5300C8; 
+  transform: scale(0.95); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .boton-blanco{
     color: #03318C;
     background-color: #fff;
+}
+
+.boton-blanco:hover{
+  background-color: #03318C;
+  color: #fff;
+}
+
+.boton-blanco:active{
+  background-color: #FF0000;
+  color: #5300C8; 
+  transform: scale(0.95); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* S E C C I O N   D E L   F O O T T E R */
