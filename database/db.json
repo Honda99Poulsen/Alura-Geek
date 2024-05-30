@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "nombre": "Spider Man",
+      "urlImagen": "https://th.bing.com/th/id/OIP.qNZEpnIjtz7LwL5QLGwUuQHaHa?rs=1&pid=ImgDetMain",
+      "precio": "20",
+      "id": "1"
+    },
+    {
+      "nombre": "Iron Man",
+      "urlImagen": "https://th.bing.com/th/id/OIP.k-acea35CDKOP2ljQOpm8wHaHa?rs=1&pid=ImgDetMain",
+      "precio": "30",
+      "id": "2"
+    },
+    {
+      "nombre": "Green Lantern",
+      "urlImagen": "https://i.ebayimg.com/images/g/P8wAAOSwCGVX7TGd/s-l1200.webp",
+      "precio": "18",
+      "id": "3"
+    }
+  ]
+}
