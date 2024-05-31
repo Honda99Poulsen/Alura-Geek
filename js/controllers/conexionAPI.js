@@ -54,24 +54,15 @@ async function crearArticuloProducto(nombre, precio, urlImagen ){
 }
 
 async function eliminarArticulo(idProducto) {
-    try {
+
         const conexion = await fetch(`http://localhost:3000/productos/${idProducto}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            }
+            method: `DELETE`
         });
 
         if (!conexion.ok) {
             throw new Error(`Error al eliminar el artículo con id ${idProducto}: ${conexion.statusText}`);
         }
 
-        return conexion;
-
-    } catch (error) {
-        console.log('Error:', error);
-        throw error; // Re-lanza el error para que el llamador pueda manejarlo si es necesario
-    }
 }
 
 
