@@ -1,4 +1,5 @@
 import { ConexionApi } from "../controllers/conexionAPI.js";
+import { handleDelete } from "./eliminarProducto.js";
 
 const cardContainer = document.querySelector("[data-card-container]");
 
@@ -17,6 +18,10 @@ export default function listarProductos (nombre,precio,imagen,id){
                         </div>
    `;
 
+   ///////////////////////////////
+   const deleteButton = elementoCreado.querySelector('.basurero');
+   deleteButton.addEventListener('click', handleDelete);
+
    return elementoCreado;
 
 }
@@ -34,5 +39,8 @@ async function listarProductosPantalla(){
             articulo.id)) );
 
 }
+//////////////////////////////////////////////////////////
+
+
 
  listarProductosPantalla();
