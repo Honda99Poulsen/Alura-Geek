@@ -7,6 +7,4 @@ limpiar.addEventListener("click", () => {
     const campoPrecio = document.querySelector("[data-precio]").value= "";
     const campoUrl = document.querySelector("[data-imagen]").value = "";
 
-    console.log('Campos limpiados');
-
 })

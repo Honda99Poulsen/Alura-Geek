@@ -48,17 +48,17 @@
                 <form action="" class="formulario" data-form>
 
                     <!-- input Nombre -->
-                    <input name="nombre" class="campos" type="text" placeholder="nombre..." data-nombre>
+                    <input name="nombre" class="campos" type="text" placeholder="nombre..." data-nombre required>
 
                     <!-- input Precio -->
-                    <input name="precio" class="campos" type="text" placeholder="precio..." data-precio>
+                    <input name="precio" class="campos" type="text" placeholder="precio..." data-precio required>
 
                     <!-- input Imagen -->
-                    <input name="imagen" class="campos" type="text" placeholder="imagen..." data-imagen>
+                    <input name="imagen" class="campos" type="text" placeholder="imagen..." data-imagen required>
 
                     <div class="enviarLimpiar">
-                        <button class="botones boton-azul">Enviar</button>
-                        <button class="botones boton-blanco" data-limpiar >Limpiar</button>
+                        <button type="submit" class="botones boton-azul" data-enviar>Enviar</button>
+                        <button type="reset" class="botones boton-blanco" data-limpiar >Limpiar</button>
                     </div>
 
                 </form>

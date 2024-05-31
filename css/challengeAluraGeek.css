@@ -190,6 +190,16 @@
   border: none;
 }
 
+.basurero:hover{
+  transform: scale(0.95);
+  background-color: gray;
+  transition: 1s;
+}
+
+.basurero:active{
+  background-color: #FF0000;
+}
+
 /* Seccion Agregar Producto */
 
 .Agregar{
@@ -217,13 +227,16 @@
     margin-bottom: 40px;
     width: 392px;
     height: 58px;
+    color: #5300C8;
+    font-size: 16px;
+    font-family: "IBM Plex Mono";  
+    padding-left: 12.54px;
 }
 
 .campos::placeholder{
     color: #5300C8;
     font-size: 16px;
-    font-family: "IBM Plex Mono";  
-    padding: 10px 0 9px 12.54px;
+    font-family: "IBM Plex Mono"; 
 }
 
 .enviarLimpiar{
